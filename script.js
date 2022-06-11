@@ -100,7 +100,7 @@ const refreshPage = () => {
 }
 
 const inicioQuant = () => {
-    const quantidade = prompt('Digite a quantidade de capítulos', '2 - 5');
+    const quantidade = prompt('Digite a quantidade de capítulos entre 2 e 5');
     if (quantidade >= 2 && quantidade <= 5) {
         creatEle(quantidade);
         calcule();
