@@ -13,6 +13,15 @@ function dataAtualFormatada(){
     } 
 }
 
+function returnName () {
+    if (dataAtualFormatada() === 'Gabriel') {
+        return 'Vitória'
+    }
+    else {
+        return 'Gabriel'
+    }
+}
+
 function creatEle (quant) {
     for (let i = 0; i < quant; i += 1) {
         document.body.appendChild(document.createElement('input')).classList.add('inputs');
@@ -54,26 +63,28 @@ spanCalc.addEventListener('click', () => {
     if (quantInputs === 2) {
         const sum = parseInt(elements[0].value) - parseInt(elements[1].value);
         const calc = sum / 2
-        alert(Math.floor(calc));
+        alert(`Quem começa a ler hoje é ${dataAtualFormatada()}. A diferença de versículos para ${returnName()} é: ${Math.floor(calc)}`);
 }
     if (quantInputs === 3) {
         const sumImpares = parseInt(elements[0].value) + parseInt(elements[2].value);
         const sumPares = parseInt(elements[1].value)
         const calc = sumImpares - sumPares;
         const result = calc / 2;
-        alert(`Quem começa a ler hoje é ${dataAtualFormatada()} ${Math.floor(result)}`);
+        alert(`Quem começa a ler hoje é ${dataAtualFormatada()}. A diferença de versículos para ${returnName()} é: ${Math.floor(result)}`);
 }
     if (quantInputs === 4) {
         const sumImpares = parseInt(elements[0].value) + parseInt(elements[2].value);
         const sumPares = parseInt(elements[1].value) + parseInt(elements[3].value);
         const calc = sumImpares - sumPares;
-        alert(Math.floor(calc));
+        const result = calc / 2;
+        alert(`Quem começa a ler hoje é ${dataAtualFormatada()}. A diferença de versículos para ${returnName()} é: ${Math.floor(result)}`);
 }
     if (quantInputs === 5) {
         const sumImpares = parseInt(elements[0].value) + parseInt(elements[2].value) + parseInt(elements[4].value);
         const sumPares = parseInt(elements[1].value) + parseInt(elements[3].value);
         const calc = sumImpares - sumPares;
-        alert(Math.floor(calc));
+        const result = calc / 2;
+        alert(`Quem começa a ler hoje é ${dataAtualFormatada()}. A diferença de versículos para ${returnName()} é: ${Math.floor(result)}`);
 }
 })
 
