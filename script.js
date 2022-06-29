@@ -56,7 +56,7 @@ function creatEle(quant) {
 const calcule = () => {
     const spanCalc = document.querySelector('#calculo');
     const btnCalcular = document.createElement('button');
-    btnCalcular.innerText = 'Calcule 🖩'
+    btnCalcular.innerText = 'Calcule!'
     spanCalc.appendChild(btnCalcular);
 }
 
